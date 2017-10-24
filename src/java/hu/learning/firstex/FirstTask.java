@@ -38,6 +38,8 @@ public class FirstTask implements IFirstTask{
 		}if(ex3(new String("AEgaERbaeTHSAedbhserTHBSert")) != true){
 			return false;
 		}if(ex4(new int[]{2, 9, 1, 4, 0, -5, 6}) == 2){
+			//FIXME: nem jo a feltetel!!!! 
+			
 			return false;
 		}
 		
