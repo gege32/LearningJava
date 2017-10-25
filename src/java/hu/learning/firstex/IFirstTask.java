@@ -30,6 +30,6 @@ public interface IFirstTask extends ITask{
 	 * Orders the given array from the lowest to highest, and returns the mean
 	 * @return
 	 */
-	public int ex4(int[] array);
+	public float ex4(int[] array); // changed the in to float
 
 }
