@@ -1,6 +1,6 @@
 package hu.learning.secondex.data;
 
-public class ComplexNumber {
+public abstract class ComplexNumber implements Comparable<ComplexNumber>{
 
 	
 }

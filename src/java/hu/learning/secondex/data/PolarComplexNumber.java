@@ -8,9 +8,9 @@ public class PolarComplexNumber extends ComplexNumber {
 	public PolarComplexNumber(float r, float phi) {
 		// TODO: needs to be finished
 	}
-	
+
 	public CartesianComplexNumber convertToCartesian() {
-		//TODO: must be finished
+		// TODO: must be finished
 		return new CartesianComplexNumber(0, 0);
 	}
 
@@ -19,6 +19,17 @@ public class PolarComplexNumber extends ComplexNumber {
 		// TODO: expected formatting: r * (e ^ (i*phi))
 		return "";
 	}
-	
-	//TODO: some getters still required, see Cartesian
+
+	@Override
+	public boolean equals(Object obj) {
+		return false;
+	}
+
+	@Override
+	public int compareTo(ComplexNumber o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	// TODO: some getters still required, see Cartesian
 }
