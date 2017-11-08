@@ -1,9 +1,9 @@
 package hu.learning.secondex;
 
 import java.util.ArrayList;
-import java.util.HashMap;
+//import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
+//import java.util.Map;
 
 import hu.learning.secondex.data.CartesianComplexNumber;
 import hu.learning.secondex.data.ComplexNumber;
@@ -29,7 +29,7 @@ public class SecondTask implements ISecondTask{
 		strinbgList.add("setgsert");
 		strinbgList.add("dtyhnxdfrv");
 		
-		Map<String, ComplexNumber> testMap = new HashMap<>();
+//		Map<String, ComplexNumber> testMap = new HashMap<>();
 
 		
 		// TODO Auto-generated method stub

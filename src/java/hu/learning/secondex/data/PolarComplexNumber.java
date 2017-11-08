@@ -6,18 +6,23 @@ public class PolarComplexNumber extends ComplexNumber {
 	private float r;
 
 	public PolarComplexNumber(float r, float phi) {
-		// TODO: needs to be finished
-	}
+		this.r = r;
+		this.phi = phi;
+	}	
 
 	public CartesianComplexNumber convertToCartesian() {
-		// TODO: must be finished
-		return new CartesianComplexNumber(0, 0);
+		this.r = getR();
+		this.phi = getPhi();
+		float a = (float) (Math.sin(this.phi) * this.r);
+		float bi = (float) (Math.cos(this.phi) * this.r);
+		return new CartesianComplexNumber(a, bi);
 	}
 
 	@Override
 	public String toString() {
 		// TODO: expected formatting: r * (e ^ (i*phi))
-		return "";
+		
+		return "r:" + r + ", angle:" + phi;
 	}
 
 	@Override
@@ -31,5 +36,11 @@ public class PolarComplexNumber extends ComplexNumber {
 		return 0;
 	}
 
-	// TODO: some getters still required, see Cartesian
+	public float getR() {
+		return r;
+	}
+	
+	public float getPhi() {
+		return phi;
+	}
 }

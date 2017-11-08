@@ -18,8 +18,11 @@ public class CartesianComplexNumber extends ComplexNumber {
 	}
 	
 	public PolarComplexNumber convertToPolar() {
-		//TODO: must be finished
-		return new PolarComplexNumber(0, 0);
+		this.a = getA();
+		this.bi = getBi();
+		float r = (float) Math.sqrt((this.a * this.a) + (this.bi * this.bi));
+		float phi = (float) Math.sin(this.bi / r);
+		return new PolarComplexNumber(r,phi);
 	}
 	
 	@Override
@@ -43,7 +46,7 @@ public class CartesianComplexNumber extends ComplexNumber {
 	public float getBi() {
 		return bi;
 	}
-
+	
 	@Override
 	public int compareTo(ComplexNumber o) {
 		// TODO Auto-generated method stub
