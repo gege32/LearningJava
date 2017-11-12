@@ -8,11 +8,11 @@ public class Elem {
 	
 	public Elem(int ertek, Elem kovetkezo) {
 		this.kovetkezo = kovetkezo;
-		this.ertek = ertek;
+		this.setErtek(ertek);
 	}
 	
 	public Elem(int ertek) {
-		this.ertek = ertek;
+		this.setErtek(ertek);
 		this.kovetkezo = null;
 	}
 	
@@ -29,7 +29,15 @@ public class Elem {
 	
 	//getter
 	public int ertek() {
+		return getErtek();
+	}
+
+	public int getErtek() {
 		return ertek;
+	}
+
+	public void setErtek(int ertek) {
+		this.ertek = ertek;
 	}
 
 }
