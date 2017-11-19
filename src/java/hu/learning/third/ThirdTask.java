@@ -15,7 +15,7 @@ public class ThirdTask implements ITask{
 	// 5FT: 2DB
 	// 10FT: 3db
 	
-	private void ex1(int money){
+	public String ex1(int money){
 		int ketszazas = 0;
 		int szazas = 0;
 		int otvenes = 0;
@@ -50,14 +50,19 @@ public class ThirdTask implements ITask{
 			}
 		
 		}
-		Map<String, Integer> moneyMap = new HashMap<String, Integer>();
-		moneyMap.put("Ketszazas", ketszazas);
-		moneyMap.put("Szazas", szazas);
-		moneyMap.put("Otvenes", otvenes);
-		moneyMap.put("Huszas", huszas);
-		moneyMap.put("Tizes", tizes);
-		moneyMap.put("Otos", otos);
-		System.out.println("A legkevesebb aproval kifizetni az adott osszeget:" + moneyMap );
+		String message = "Ketszazas= " + ketszazas + " szazas= " + szazas + " otvenes= " + otvenes + " huszas= " + huszas + " tizes= " + tizes + " otos= " + otos;
+//		Map<String, Integer> moneyMap = new HashMap<String, Integer>();
+//		moneyMap.put("Ketszazas", ketszazas);
+//		moneyMap.put("Szazas", szazas);
+//		moneyMap.put("Otvenes", otvenes);
+//		moneyMap.put("Huszas", huszas);
+//		moneyMap.put("Tizes", tizes);
+//		moneyMap.put("Otos", otos);
+//		System.out.println("A legkevesebb aproval kifizetni az adott osszeget:" + moneyMap );
+//		System.out.println(message);
+		
+		return message;
+		
 	}
 	
 	//Adott az Elem nevu osztaly. A fuggvenyben letrehozott lancolt listahoz
