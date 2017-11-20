@@ -3,6 +3,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import hu.learning.firstex.FirstTask;
+import hu.learning.fourth.FourthTask;
 import hu.learning.secondex.SecondTask;
 import hu.learning.third.ThirdTask;
 
@@ -15,6 +16,7 @@ public class Main {
 		taskList.add(FirstTask.getTask());
 		taskList.add(new SecondTask());
 		taskList.add(new ThirdTask());
+		taskList.add(new FourthTask());
 		
 		for(ITask task : taskList){
 			System.out.println(task.checkExcercise());

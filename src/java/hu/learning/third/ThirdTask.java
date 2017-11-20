@@ -275,5 +275,14 @@ public class ThirdTask implements ITask{
 		//igy feltesszuk, hogy jo a megoldas
 		return true;
 	}
+	
+	private void iter(){
+		//Ez lesz az elso elem elerese a listaban
+		Elem elem = elemek[index[0]];
+		
+	}
+	
+	Elem[] elemek;
+	int[] index;
 
 }

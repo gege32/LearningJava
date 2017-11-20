@@ -1,41 +1,51 @@
 package hu.learning.fourth;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Scanner;
 
 public class Author {
-
-	private String name, age, gender; 
-	public List<Author> authorList = new ArrayList<Author>();
 	
-	public Author(String name, String age, String gender){
+	public enum Gender {
+		MALE, FEMALE;
+	}
+
+
+	private String name, age; 
+	
+	private Gender gender;
+	
+	public Author(String name, String age, Gender gender){
 		this.name = name;
 		this.age = age;
 		this.gender = gender;
 	}
 	
-	public void askName(String name) {
+	public Author(){}
+	
+	private void askName(Scanner reader) {
 		System.out.println("Please give the name of the Author:");
-		name = System.console().readLine();
+		name = reader.nextLine();
 				
 	}
-	public void askAge(String age) {
+	private void askAge(Scanner reader) {
 		System.out.println("Please give the age of the Author:");
-		age = System.console().readLine();
+		age = reader.nextLine();
 		
 	}
-	public void askGender(String gender) {
-		System.out.println("Please give the gender of the Author:");
-		gender = System.console().readLine();
+	private void askGender(Scanner reader) {
+		System.out.println("Please give the gender of the Author: (1: male, 2: female)");
+		String gender = reader.nextLine();
+		if(gender.equals("1")){
+			this.gender = Gender.MALE;
+		}else{
+			this.gender = Gender.FEMALE;
+		}
 		
 	}
-	public Author crateAuthor() {
-		askName(name);
-		askAge(age);
-		askGender(gender);
-		Author author = new Author(name, age, gender);
-		authorList.add(author);
-		return author;
+	
+	public void crateAuthor(Scanner reader) {
+		askName(reader);
+		askAge(reader);
+		askGender(reader);
 	}
 	
 	public String getName() {
