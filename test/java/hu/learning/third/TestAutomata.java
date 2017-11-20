@@ -1,7 +1,8 @@
 package hu.learning.third;
-import org.junit.Test;
+
 import static org.junit.Assert.assertEquals;
 
+import org.junit.Test;
 
 public class TestAutomata {
 
@@ -15,6 +16,7 @@ public class TestAutomata {
 	int otos = 1;
 	
 	String expectedMessage = "Ketszazas= " + ketszazas + " szazas= " + szazas + " otvenes= " + otvenes + " huszas= " + huszas + " tizes= " + tizes + " otos= " + otos;
+	
 	@Test
 	public void testAutomata() {
 		
